@@ -8,3 +8,6 @@ https://github.com/KannoYuto/HAC2023/blob/2e7ce86754e73aafd5c15108872d147314457b
 https://github.com/K1212TK/TaskSchedule/blob/f6d0d7ca5f958726f7d78c03f209d6cd2afae368/Assets/Script/SQLite/SqliteDatabase.cs
 https://github.com/sh1ch/unity-sqliteAAR-practice/tree/master
 https://github.com/search?q=libsqlitex+unityengine&type=Code
+
+`sudo bash build.sh`
+`file */libsqlite3.so`
