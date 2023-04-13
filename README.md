@@ -1,4 +1,4 @@
-# unity-android-sqlite
+# Android SQLite (libsqlite3.so) library builds for Unity, including x86_64 for Magic Leap 2
 
 https://stackoverflow.com/questions/60592556/nexus7-cant-load-native-library
 https://developer.android.com/games/optimize/64-bit
