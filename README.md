@@ -1,5 +1,7 @@
 # Android SQLite (libsqlite3.so) library builds for Unity, including x86_64 for Magic Leap 2
 
+3.51.3
+
 Uses SQL amalgamation zip
 
 https://stackoverflow.com/questions/60592556/nexus7-cant-load-native-library
