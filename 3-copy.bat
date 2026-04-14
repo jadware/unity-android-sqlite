@@ -1,6 +1,3 @@
-SET NDK_PROJECT_PATH=%CD%\sqlite3
-ndk-build
-
 mkdir Assets\Plugins\Android\arm64-v8a
 copy /y sqlite3\libs\arm64-v8a\libsqlite3.so Assets\Plugins\Android\arm64-v8a
 
