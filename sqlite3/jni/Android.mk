@@ -1,6 +1,3 @@
-APP_PLATFORM := android-33
-APP_ABI := all
-
 LOCAL_PATH := $(call my-dir)
 
 
@@ -14,7 +11,7 @@ LOCAL_MODULE_FILENAME   := libsqlite3
 LOCAL_SRC_FILES         := ./src/sqlite3.c
 LOCAL_C_INCLUDES        := ./src
 LOCAL_EXPORT_C_INCLUDES := ./src
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_COLUMN_METADATA
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -24,7 +21,7 @@ LOCAL_STATIC_LIBRARIES  := libsqlite3-a
 LOCAL_SRC_FILES         := ./src/shell.c ./src/sqlite3.c
 LOCAL_C_INCLUDES        := ./src
 LOCAL_EXPORT_C_INCLUDES := ./src
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -fPIE
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_COLUMN_METADATA -fPIE
 LOCAL_LDFLAGS           := -fPIE -pie
 include $(BUILD_EXECUTABLE)
 
@@ -39,7 +36,7 @@ LOCAL_MODULE_FILENAME   := libsqlite3
 LOCAL_SRC_FILES         := ./src/sqlite3.c
 LOCAL_C_INCLUDES        := ./src
 LOCAL_EXPORT_C_INCLUDES := ./src
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_COLUMN_METADATA
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -49,6 +46,6 @@ LOCAL_SHARED_LIBRARIES  := libsqlite3-so
 LOCAL_SRC_FILES         := ./src/shell.c ./src/sqlite3.c
 LOCAL_C_INCLUDES        := ./src
 LOCAL_EXPORT_C_INCLUDES := ./src
-LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -fPIE
+LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_COLUMN_METADATA -fPIE
 LOCAL_LDFLAGS           := -fPIE -pie
 include $(BUILD_EXECUTABLE)
