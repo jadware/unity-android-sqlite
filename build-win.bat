@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 set "SRC=sqlite3\jni\src\sqlite3.c"
-set "COMMON_FLAGS=/O2 /DSQLITE_ENABLE_COLUMN_METADATA"
+set "COMMON_FLAGS=/O2 /DSQLITE_API=__declspec(dllexport) /DSQLITE_ENABLE_COLUMN_METADATA"
 
 if not exist "%SRC%" (
     echo [ERROR] Source file not found: %SRC%

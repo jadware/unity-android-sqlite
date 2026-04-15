@@ -1,3 +1,7 @@
 /sqlite3/libs
 /sqlite3/obj
 /sqlite3.obj
+/Assets/Plugins/x64/sqlite3.exp
+/Assets/Plugins/x86/sqlite3.exp
+/Assets/Plugins/x64/sqlite3.lib
+/Assets/Plugins/x86/sqlite3.lib
